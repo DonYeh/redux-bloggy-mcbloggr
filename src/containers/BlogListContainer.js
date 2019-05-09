@@ -13,3 +13,5 @@ const mapStateToProps = state => {
 // (we don't need this...yet)
 const makeBlogListSmart = connect(mapStateToProps);
 const SmartBlogList = makeBlogListSmart(BlogList);
+
+export default SmartBlogList;
