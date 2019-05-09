@@ -29,7 +29,7 @@ const store = createStore(
 	window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-let saveInterval = setInterval(() => {
+setInterval(() => {
 	const state = store.getState();
 	localStorage.setItem(LS_KEY, JSON.stringify(state));
 }, FREQUENCY);
